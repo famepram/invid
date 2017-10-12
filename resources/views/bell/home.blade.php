@@ -1,4 +1,5 @@
 @extends('bell.layouts.app')
+@section('content')
 <section class="hero">
     <div class="container text-center">
         <div class="row">
@@ -8,21 +9,13 @@
         </div>
 
         <div class="col-md-12">
-            <h1>
-                A theme with personality
-            </h1>
-
+            <h1>A theme with personality</h1>
             <p class="tagline">This is a powerful theme with some great features that you can use in your future projects.</p>
             <a class="btn btn-full" href="#about">Get Started Now</a>
         </div>
     </div>
-
 </section>
-<!-- /Hero -->
 @include('bell.inc.header')
-
-<!-- About -->
-
 <section class="about" id="about">
     <div class="container text-center">
         <h2>
@@ -122,13 +115,8 @@
                     </div>
 
                     <div>
-                        <h3>
-                            Innovative Ideas
-                        </h3>
-
-                        <p>
-                            Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.
-                        </p>
+                        <h3>Innovative Ideas</h3>
+                        <p>Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.</p>
                     </div>
                 </div>
             </div>
@@ -144,13 +132,8 @@
                     </div>
 
                     <div>
-                        <h3>
-                            Good Documentation
-                        </h3>
-
-                        <p>
-                            Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.
-                        </p>
+                        <h3>Good Documentation</h3>
+                        <p>Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.</p>
                     </div>
                 </div>
             </div>
@@ -498,8 +481,6 @@
         </div>
     </div>
 </section>
-<!-- /Team -->
-<!-- @component: footer -->
 
 <section id="contact">
     <div class="container">
@@ -560,5 +541,4 @@
     </div>
 </section>
 
-@include('bell.inc.footer')
-<a class="scrolltop" href="#"><span class="fa fa-angle-up"></span></a> 
+@endsection('content')
